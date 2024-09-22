@@ -6,8 +6,18 @@ const lilyRoute = (req, res) => {
     res.send("Lily Weber");
 };
 
+const lorindaRoute = (req, res) => {
+    res.send("Lorinda Coombs");
+}
+
+const bradRoute = (req, res) => {
+    res.send("Brad Coombs");
+}
+
 module.exports = {
     dalanRoute,
-    lilyRoute
+    lilyRoute,
+    lorindaRoute,
+    bradRoute
 };
 
