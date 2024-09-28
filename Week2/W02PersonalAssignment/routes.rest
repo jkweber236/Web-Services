@@ -9,3 +9,17 @@ GET http://localhost:8080/contacts/66f87979d4946a757e7b1844
 GET http://localhost:8080/contacts/66f87980d4946a757e7b1845
 ###
 GET http://localhost:8080/contacts/66f87986d4946a757e7b1846
+
+// PRODUCTION Deploy
+###
+GET https://cse341-spring23-b6u9.onrender.com/contacts 
+###
+GET https://cse341-spring23-b6u9.onrender.com/contacts/66f87968d4946a757e7b1843 
+###
+GET https://cse341-spring23-b6u9.onrender.com/contacts/66f87979d4946a757e7b1844
+###
+GET https://cse341-spring23-b6u9.onrender.com/contacts/66f87980d4946a757e7b1845
+###
+GET https://cse341-spring23-b6u9.onrender.com/contacts/66f87986d4946a757e7b1846
+
+
