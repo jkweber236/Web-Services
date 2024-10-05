@@ -56,4 +56,15 @@ const updateContact = async (req, res) => {
   }
 };
 
-module.exports = { getAll, getSingle, createContact , updateContact};
+const deleteContact = async (req, res) => {
+  const userId = new ObjectId(req.params.id)
+  const response = await mongodb.getDb().db('CSE341').collection('contacts').deleteOne({ _id: userId });
+  console.log(response);
+  if (response.deletedCount > 0) {
+    res.status(204).send();
+  } else {
+    res.status(500).json(response.error || 'Unable to delete contact.');
+  }
+};
+
+module.exports = { getAll, getSingle, createContact, updateContact, deleteContact };
