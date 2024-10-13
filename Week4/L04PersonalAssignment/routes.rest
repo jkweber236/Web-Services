@@ -67,7 +67,3 @@ content-type: application/json
 
 ### DELETE contact
 DELETE https://web-services-w04-4emz.onrender.com/contacts/6700e78dcc1c83b8529b4836 HTTP/1.1
-
-
-
-
