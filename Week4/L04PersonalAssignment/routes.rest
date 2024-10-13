@@ -36,13 +36,13 @@ DELETE http://localhost:8080/contacts/6700cd33e942bfbdc8936a2e HTTP/1.1
 
 // PRODUCTION Deploy
 ###
-GET https://web-services-w03.onrender.com/contacts 
+GET https://web-services-w04-4emz.onrender.com/contacts 
 
 ###
-GET https://web-services-w03.onrender.com/contacts/66f87968d4946a757e7b1843 
+GET https://web-services-w04-4emz.onrender.com/contacts/66f87968d4946a757e7b1843 
 
 ### Create contact
-POST https://web-services-w03.onrender.com/contacts HTTP/1.1
+POST https://web-services-w04-4emz.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
@@ -54,7 +54,7 @@ content-type: application/json
 }
 
 ### PUT contact
-PUT https://web-services-w03.onrender.com/contacts/66f87979d4946a757e7b1844 HTTP/1.1
+PUT https://web-services-w04-4emz.onrender.com/contacts/66f87979d4946a757e7b1844 HTTP/1.1
 content-type: application/json
 
 {
@@ -66,7 +66,7 @@ content-type: application/json
 }
 
 ### DELETE contact
-DELETE https://web-services-w03.onrender.com/contacts/6700e78dcc1c83b8529b4836 HTTP/1.1
+DELETE https://web-services-w04-4emz.onrender.com/contacts/6700e78dcc1c83b8529b4836 HTTP/1.1
 
 
 
