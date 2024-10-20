@@ -69,67 +69,51 @@ DELETE http://localhost:8080/exercises/ HTTP/1.1
 
 // PRODUCTION Deploy
 ### Get all workouts
-GET https://web-services-w04-4emz.onrender.com/workouts 
+GET https://web-services-w05-1p8w.onrender.com/workouts 
 
 ### Get all exercises
-GET https://web-services-w04-4emz.onrender.com/exercises
+GET https://web-services-w05-1p8w.onrender.com/exercises
 
 ### Get one workout
-GET https://web-services-w04-4emz.onrender.com/workouts/
+GET https://web-services-w05-1p8w.onrender.com/workouts/
 
 ### Get one exercise
-GET https://web-services-w04-4emz.onrender.com/exercises/
+GET https://web-services-w05-1p8w.onrender.com/exercises/
 
 ### Create workout
-POST https://web-services-w04-4emz.onrender.com/workouts HTTP/1.1
+POST https://web-services-w05-1p8w.onrender.com/workouts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Cedar",
-    "lastName": "Coombs",
-    "email": "awesomedude5326@gmail.com",
-    "favoriteColor": "Yellow",
-    "birthday": "11/02/2007"
+
 }
 
 ### Create exercise
-POST https://web-services-w04-4emz.onrender.com/exercises HTTP/1.1
+POST https://web-services-w05-1p8w.onrender.com/exercises HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Cedar",
-    "lastName": "Coombs",
-    "email": "awesomedude5326@gmail.com",
-    "favoriteColor": "Yellow",
-    "birthday": "11/02/2007"
+   
 }
 
 ### Update workout
-PUT https://web-services-w04-4emz.onrender.com/workouts/ HTTP/1.1
+PUT https://web-services-w05-1p8w.onrender.com/workouts/ HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Lily",
-    "lastName": "Weber",
-    "email": "lilyweber@gmail.com",
-    "favoriteColor": "Pink",
-    "birthday": "08/02/2023"
+
 }
 
 ### Update exercise
-PUT https://web-services-w04-4emz.onrender.com/exercises/ HTTP/1.1
+PUT https://web-services-w05-1p8w.onrender.com/exercises/ HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Lily",
-    "lastName": "Weber",
-    "email": "lilyweber@gmail.com",
-    "favoriteColor": "Pink",
-    "birthday": "08/02/2023"
+  
 }
 
 ### Delete workout
-DELETE https://web-services-w04-4emz.onrender.com/workouts/ HTTP/1.1
+DELETE https://web-services-w05-1p8w.onrender.com/workouts/ HTTP/1.1
 
 ### Delete exercise
-DELETE https://web-services-w04-4emz.onrender.com/exercises/ HTTP/1.1
+DELETE https://web-services-w05-1p8w.onrender.com/exercises/ HTTP/1.1
