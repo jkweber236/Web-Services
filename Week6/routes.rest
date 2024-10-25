@@ -1,0 +1,136 @@
+// LOCALHOST
+### Get all workouts
+GET http://localhost:8080/workouts
+
+### Get all exercises
+GET http://localhost:8080/exercises
+
+### Get one workout
+GET http://localhost:8080/workouts/67144540f87a6f09b2a7b3e5
+
+### Get one exercise
+GET http://localhost:8080/exercises/67144531f87a6f09b2a7b3df 
+
+### Create workout
+POST http://localhost:8080/workouts HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Upper Body Strength Training",
+  "date": "2024-10-20",
+  "duration": "55 minutes",
+  "type": "Strength Training",
+  "caloriesBurned": 400,
+  "exercises": [
+    { "name": "Bench Press", "sets": 4, "reps": 12, "weight": 100, "duration": "10 minutes" },
+    { "name": "Overhead Press", "sets": 3, "reps": 10, "weight": 80, "duration": "8 minutes" },
+    { "name": "Bicep Curl", "sets": 3, "reps": 15, "weight": 40, "duration": "6 minutes" }
+  ],
+  "notes": "Great workout for arm and shoulder muscles."
+}
+
+
+### Create exercise
+POST http://localhost:8080/exercises HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Lunges",
+  "type": "Strength",
+  "sets": 3,
+  "reps": 12,
+  "weight": 50,
+  "duration": "6 minutes"
+}
+
+### Update workout
+PUT http://localhost:8080/workouts/ HTTP/1.1
+content-type: application/json
+
+{
+    
+}
+
+### Update exercise
+PUT http://localhost:8080/exercises/ HTTP/1.1
+content-type: application/json
+
+{
+   
+}
+
+### Delete workout
+DELETE http://localhost:8080/workouts/ HTTP/1.1
+
+### Delete exercise
+DELETE http://localhost:8080/exercises/ HTTP/1.1
+
+
+
+// PRODUCTION Deploy
+### Get all workouts
+GET https://web-services-w05-1p8w.onrender.com/workouts 
+
+### Get all exercises
+GET https://web-services-w05-1p8w.onrender.com/exercises
+
+### Get one workout
+GET https://web-services-w05-1p8w.onrender.com/workouts/67144540f87a6f09b2a7b3e5
+
+### Get one exercise
+GET https://web-services-w05-1p8w.onrender.com/exercises/67144531f87a6f09b2a7b3df
+
+### Create workout
+POST https://web-services-w05-1p8w.onrender.com/workouts HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Upper Body Strength Training",
+  "date": "2024-10-20",
+  "duration": "55 minutes",
+  "type": "Strength Training",
+  "caloriesBurned": 400,
+  "exercises": [
+    { "name": "Bench Press", "sets": 4, "reps": 12, "weight": 100, "duration": "10 minutes" },
+    { "name": "Overhead Press", "sets": 3, "reps": 10, "weight": 80, "duration": "8 minutes" },
+    { "name": "Bicep Curl", "sets": 3, "reps": 15, "weight": 40, "duration": "6 minutes" }
+  ],
+  "notes": "Great workout for arm and shoulder muscles."
+}
+
+### Create exercise
+POST https://web-services-w05-1p8w.onrender.com/exercises HTTP/1.1
+content-type: application/json
+
+
+{
+  "name": "Lunges",
+  "type": "Strength",
+  "sets": 3,
+  "reps": 12,
+  "weight": 50,
+  "duration": "6 minutes"
+}
+
+
+### Update workout
+PUT https://web-services-w05-1p8w.onrender.com/workouts/ HTTP/1.1
+content-type: application/json
+
+{
+
+}
+
+### Update exercise
+PUT https://web-services-w05-1p8w.onrender.com/exercises/ HTTP/1.1
+content-type: application/json
+
+{
+  
+}
+
+### Delete workout
+DELETE https://web-services-w05-1p8w.onrender.com/workouts/ HTTP/1.1
+
+### Delete exercise
+DELETE https://web-services-w05-1p8w.onrender.com/exercises/ HTTP/1.1

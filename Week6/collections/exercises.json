@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Push-up",
+        "type": "Strength",
+        "sets": 3,
+        "reps": 15,
+        "weight": null,
+        "duration": "5 minutes"
+    },
+    {
+        "name": "Squat",
+        "type": "Strength",
+        "sets": 4,
+        "reps": 20,
+        "weight": 110,
+        "duration": "8 minutes"
+    },
+    {
+        "name": "Running",
+        "type": "Cardio",
+        "sets": 1,
+        "reps": 1,
+        "weight": null,
+        "duration": "20 minutes"
+    },
+    {
+        "name": "Plank",
+        "type": "Strength",
+        "sets": 1,
+        "reps": 1,
+        "weight": null,
+        "duration": "3 minutes"
+    },
+    {
+        "name": "Cycling",
+        "type": "Cardio",
+        "sets": 1,
+        "reps": 1,
+        "weight": null,
+        "duration": "30 minutes"
+    }
+]
