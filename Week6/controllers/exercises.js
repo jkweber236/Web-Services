@@ -44,7 +44,11 @@ const createExercise = async (req, res) => {
     weight: req.body.weight,
     duration: req.body.duration
   };
-  const response = await mongodb.getDb().db('FitnessTracker').collection('exercises').insertOne(exercise);
+  const response = await mongodb
+    .getDb()
+    .db('FitnessTracker')
+    .collection('exercises')
+    .insertOne(exercise);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {

@@ -25,7 +25,7 @@ const saveExercise = (req, res, next) => {
 const saveWorkout = (req, res, next) => {
   const validationRule = {
     name: 'required|string',
-    date: 'required|string',
+    date: 'required|date_format',
     duration: 'required|string',
     type: 'required|string',
     caloriesBurned: 'numeric|nullable',
