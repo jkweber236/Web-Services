@@ -17,7 +17,7 @@ content-type: application/json
 
 {
   "name": "Upper Body Strength Training",
-  "date": "2024-10-20",
+  "date": "10/20/2024",
   "duration": "55 minutes",
   "type": "Strength Training",
   "caloriesBurned": 400,
@@ -50,7 +50,7 @@ content-type: application/json
 {
     {
   "name": "Morning Strength Training",
-  "date": "10-26-2024",
+  "date": "10/26/2024",
   "duration": "45 minutes",
   "type": "Strength Training",
   "caloriesBurned": 400,
@@ -114,7 +114,7 @@ content-type: application/json
 
 {
   "name": "Upper Body Strength Training",
-  "date": "10-20-2024",
+  "date": "10/20/2024",
   "duration": "55 minutes",
   "type": "Strength Training",
   "caloriesBurned": 400,
@@ -146,7 +146,7 @@ content-type: application/json
 
 {
   "name": "Morning Strength Training",
-  "date": "10-26-2024",
+  "date": "10/26/2024",
   "duration": "45 minutes",
   "type": "Strength Training",
   "caloriesBurned": 400,
