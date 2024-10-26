@@ -16,7 +16,8 @@
     "dotenv": "^16.0.0",
     "express": "^4.16.3",
     "mongodb": "^4.4.0",
-    "swagger-ui-express": "^5.0.1"
+    "swagger-ui-express": "^5.0.1",
+    "validatorjs": "^3.22.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.7",

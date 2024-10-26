@@ -4,10 +4,10 @@ const saveExercise = (req, res, next) => {
   const validationRule = {
     name: 'required|string',
     type: 'required|string',
-    sets: 'numeric',
-    reps: 'numeric',
-    weight: 'numeric',
-    duration: 'string'
+    sets: 'numeric|nullable',
+    reps: 'numeric|nullable',
+    weight: 'numeric|nullable',
+    duration: 'string|nullable'
   };
   validator(req.body, validationRule, {}, (err, status) => {
     if (!status) {
@@ -28,15 +28,15 @@ const saveWorkout = (req, res, next) => {
     date: 'required|string',
     duration: 'required|string',
     type: 'required|string',
-    caloriesBurned: 'numeric',
+    caloriesBurned: 'numeric|nullable',
     exercises: 'required|array',
     'exercises.*.name': 'required|string',
     'exercises.*.type': 'required|string',
-    'exercises.*.sets': 'numeric',
-    'exercises.*.reps': 'numeric',
-    'exercises.*.weight': 'numeric',
-    'exercises.*.duration': 'string',
-    notes: 'string'
+    'exercises.*.sets': 'numeric|nullable',
+    'exercises.*.reps': 'numeric|nullable',
+    'exercises.*.weight': 'numeric|nullable',
+    'exercises.*.duration': 'string|nullable',
+   notes: 'string|nullable'
   };
   validator(req.body, validationRule, {}, (err, status) => {
     if (!status) {
