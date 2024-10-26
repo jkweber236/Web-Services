@@ -59,7 +59,7 @@ content-type: application/json
       "name": "Push-up",
       "sets": 3,
       "reps": 15,
-      "weight": null,
+      "weight": 0,
       "duration": "5 minutes"
     },
     {
@@ -83,7 +83,7 @@ content-type: application/json
   "type": "Strength",
   "sets": 3,
   "reps": 20,
-  "weight": null,
+  "weight": 0,
   "duration": "10 minutes"
 }
 
@@ -155,7 +155,7 @@ content-type: application/json
       "name": "Push-up",
       "sets": 3,
       "reps": 15,
-      "weight": null,
+      "weight": 0,
       "duration": "5 minutes"
     },
     {
@@ -178,7 +178,7 @@ content-type: application/json
   "type": "Strength",
   "sets": 3,
   "reps": 20,
-  "weight": null,
+  "weight": 0,
   "duration": "10 minutes"
 }
 
