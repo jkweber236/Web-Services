@@ -5,10 +5,10 @@
     "description": "Fitness Tracker API",
     "version": "1.0.0"
   },
-  "host": "web-services-w05-1p8w.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/api-docs": {

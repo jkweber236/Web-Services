@@ -5,8 +5,11 @@ const doc = {
     title: 'My API',
     description: 'Fitness Tracker API'
   },
-  host: 'web-services-w05-1p8w.onrender.com',
-  schemes: ['https']
+  // host: 'web-services-w06.onrender.com',
+  // schemes: ['https']
+  host: "localhost:8080",
+  basePath: "/",
+  schemes: ["http"],
 };
 
 const outputFile = './swagger.json';

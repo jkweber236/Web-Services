@@ -1,25 +1,38 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
-const getAllExercises = async (req, res, next) => {
-  const result = await mongodb.getDb().db('FitnessTracker').collection('exercises').find();
-  result.toArray().then((lists) => {
+const getAllExercises = async (req, res) => {
+  mongodb
+  .getDb()
+  .db('FitnessTracker')
+  .collection('exercises')
+  .find()
+  .toArray((err, lists) => {
+    if (err) {
+      res.status(400).json({ message: err });
+    }
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
   });
 };
 
-const getExercise = async (req, res, next) => {
+const getExercise = async (req, res) => {
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Exercise id is invalid.');
+  }
   const exerciseId = new ObjectId(req.params.id);
-  const result = await mongodb
+  mongodb
     .getDb()
     .db('FitnessTracker')
     .collection('exercises')
-    .find({ _id: exerciseId });
-  result.toArray().then((lists) => {
-    res.setHeader('Content-Type', 'application/json');
-    res.status(200).json(lists[0]);
-  });
+    .find({ _id: exerciseId })
+    .toArray((err, result) => {
+      if (err) {
+        res.status(400).json({ message: err });
+      }
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).json(result[0]);
+    });
 };
 
 const createExercise = async (req, res) => {
@@ -40,6 +53,9 @@ const createExercise = async (req, res) => {
 };
 
 const updateExercise = async (req, res) => {
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Exercise id is invalid.');
+  }
   const exerciseId = new ObjectId(req.params.id)
   const exercise = {
     name: req.body.name,
@@ -49,7 +65,11 @@ const updateExercise = async (req, res) => {
     weight: req.body.weight,
     duration: req.body.duration
   };
-  const response = await mongodb.getDb().db('FitnessTracker').collection('exercises').replaceOne({_id: exerciseId }, exercise);
+  const response = await mongodb
+    .getDb()
+    .db('FitnessTracker')
+    .collection('exercises')
+    .replaceOne({_id: exerciseId }, exercise);
   console.log(response);
   if (response.modifiedCount > 0) {
     res.status(204).send();
@@ -59,8 +79,15 @@ const updateExercise = async (req, res) => {
 };
 
 const deleteExercise = async (req, res) => {
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Exercise id is invalid.');
+  }
   const exerciseId = new ObjectId(req.params.id)
-  const response = await mongodb.getDb().db('FitnessTracker').collection('exercises').deleteOne({ _id: exerciseId });
+  const response = await mongodb
+    .getDb()
+    .db('FitnessTracker')
+    .collection('exercises')
+    .deleteOne({ _id: exerciseId });
   console.log(response);
   if (response.deletedCount > 0) {
     res.status(200).send();
