@@ -1,0 +1,65 @@
+[
+    {
+      "name": "Morning Strength Training",
+      "date": "2024-10-19",
+      "duration": "45 minutes",
+      "type": "Strength Training",
+      "caloriesBurned": 350,
+      "exercises": [
+        { "name": "Push-up", "sets": 3, "reps": 15, "weight": null, "duration": "5 minutes" },
+        { "name": "Squat", "sets": 4, "reps": 20, "weight": 110, "duration": "8 minutes" }
+      ],
+      "notes": "Focused on proper form. Ready to tackle the day!"
+    },
+    {
+      "name": "Evening Cardio Run",
+      "date": "2024-10-19",
+      "duration": "30 minutes",
+      "type": "Cardio",
+      "caloriesBurned": 400,
+      "exercises": [
+        { "name": "Running", "sets": 1, "reps": 1, "weight": null, "duration": "20 minutes" },
+        { "name": "Cycling", "sets": 1, "reps": 1, "weight": null, "duration": "10 minutes" }
+      ],
+      "notes": "Solid run with a good pace. Excellent cardio session."
+    },
+    {
+      "name": "Full Body Workout",
+      "date": "2024-10-18",
+      "duration": "60 minutes",
+      "type": "Strength Training",
+      "caloriesBurned": 450,
+      "exercises": [
+        { "name": "Deadlift", "sets": 4, "reps": 12, "weight": 150, "duration": "10 minutes" },
+        { "name": "Bench Press", "sets": 3, "reps": 10, "weight": 120, "duration": "8 minutes" },
+        { "name": "Plank", "sets": 1, "reps": 1, "weight": null, "duration": "3 minutes" }
+      ],
+      "notes": "Heavy lifting day."
+    },
+    {
+      "name": "Morning Yoga",
+      "date": "2024-10-17",
+      "duration": "50 minutes",
+      "type": "Yoga",
+      "caloriesBurned": 200,
+      "exercises": [
+        { "name": "Downward Dog", "sets": 1, "reps": 5, "weight": null, "duration": "10 minutes" },
+        { "name": "Child’s Pose", "sets": 1, "reps": 3, "weight": null, "duration": "5 minutes" },
+        { "name": "Warrior", "sets": 1, "reps": 3, "weight": null, "duration": "5 minutes" }
+      ],
+      "notes": "Relaxing. Great start to the day."
+    },
+    {
+      "name": "HIIT Workout",
+      "date": "2024-10-16",
+      "duration": "25 minutes",
+      "type": "High-Intensity Interval Training",
+      "caloriesBurned": 500,
+      "exercises": [
+        { "name": "Burpees", "sets": 4, "reps": 20, "weight": null, "duration": "2 minutes" },
+        { "name": "Jump Squats", "sets": 4, "reps": 15, "weight": null, "duration": "2 minutes" }
+      ],
+      "notes": "None."
+    }
+  ]
+  
