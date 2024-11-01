@@ -4,3 +4,5 @@ CreateExercise.txt
 CreateWorkout.txt
 UpdateExercise.txt
 UpdateWorkout.txt
+oauth/token.json
+oauth/credentials.json
