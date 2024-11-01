@@ -97,19 +97,19 @@ DELETE http://localhost:8080/exercises/ HTTP/1.1
 
 // PRODUCTION Deploy
 ### Get all workouts
-GET https://web-services-w06.onrender.com/workouts 
+GET https://web-services-w07.onrender.com/workouts 
 
 ### Get all exercises
-GET https://web-services-w06.onrender.com/exercises
+GET https://web-services-w07.onrender.com/exercises
 
 ### Get one workout
-GET https://web-services-w06.onrender.com/workouts/67144540f87a6f09b2a7b3e5
+GET https://web-services-w07.onrender.com/workouts/67144540f87a6f09b2a7b3e5
 
 ### Get one exercise
-GET https://web-services-w06.onrender.com/exercises/67144531f87a6f09b2a7b3df
+GET https://web-services-w07.onrender.com/exercises/67144531f87a6f09b2a7b3df
 
 ### Create workout
-POST https://web-services-w06.onrender.com/workouts HTTP/1.1
+POST https://web-services-w07.onrender.com/workouts HTTP/1.1
 content-type: application/json
 
 {
@@ -127,7 +127,7 @@ content-type: application/json
 }
 
 ### Create exercise
-POST https://web-services-w06.onrender.com/exercises HTTP/1.1
+POST https://web-services-w07.onrender.com/exercises HTTP/1.1
 content-type: application/json
 
 {
@@ -141,7 +141,7 @@ content-type: application/json
 
 
 ### Update workout
-PUT https://web-services-w06.onrender.com/workouts/67144540f87a6f09b2a7b3e5 HTTP/1.1
+PUT https://web-services-w07.onrender.com/workouts/67144540f87a6f09b2a7b3e5 HTTP/1.1
 content-type: application/json
 
 {
@@ -170,7 +170,7 @@ content-type: application/json
 }
 
 ### Update exercise
-PUT https://web-services-w06.onrender.com/exercises/67144531f87a6f09b2a7b3df HTTP/1.1
+PUT https://web-services-w07.onrender.com/exercises/67144531f87a6f09b2a7b3df HTTP/1.1
 content-type: application/json
 
 {
@@ -183,7 +183,7 @@ content-type: application/json
 }
 
 ### Delete workout
-DELETE https://web-services-w06.onrender.com/workouts/ HTTP/1.1
+DELETE https://web-services-w07.onrender.com/workouts/ HTTP/1.1
 
 ### Delete exercise
-DELETE https://web-services-w06.onrender.com/exercises/ HTTP/1.1
+DELETE https://web-services-w07.onrender.com/exercises/ HTTP/1.1

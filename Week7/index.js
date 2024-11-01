@@ -7,7 +7,7 @@ const port = process.env.PORT || 8080;
 const app = express();
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
-const usersRoutes = require('./routes/users'); // Import your users routes
+const usersRoutes = require('./routes/users');
 
 const config = {
   authRequired: false,
