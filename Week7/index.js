@@ -5,11 +5,9 @@ const { auth, requiresAuth } = require('express-openid-connect');
 
 const port = process.env.PORT || 8080;
 const app = express();
-const mongoose = require('mongoose');
-const User = require('./models/user.js')
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
-
+const usersRoutes = require('./routes/users'); // Import your users routes
 
 const config = {
   authRequired: false,
@@ -21,7 +19,6 @@ const config = {
 };
 
 app.use(auth(config));
-
 app.get('/', (req, res) => {
   res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
 });
@@ -29,29 +26,13 @@ app.get('/', (req, res) => {
 app.get('/profile', requiresAuth(), (req, res) => {
   res.send(JSON.stringify(req.oidc.user));
 });
-
 app.use(bodyParser.json());
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   next();
 });
 
-app.get('/users', requiresAuth(), (req, res) => {
-  User.find()
-    .then(users => {
-      res.status(200).json(users);
-    })
-    .catch(err => {
-      res.status(500).json({ message: 'An error occurred', error: err });
-    });
-});
-
-app.use('/', require('./routes'));
-
-
-process.on('uncaughtException', (err, origin) => {
-  console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`);
-});
+app.use('/', usersRoutes); 
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
