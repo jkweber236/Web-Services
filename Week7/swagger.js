@@ -5,7 +5,7 @@ const doc = {
     title: 'My API',
     description: 'Fitness Tracker API'
   },
-  host: 'web-services-w06.onrender.com',
+  host: 'web-services-w07.onrender.com',
   schemes: ['https']
 };
 
