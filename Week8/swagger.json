@@ -5,7 +5,7 @@
     "description": "Fitness Tracker API",
     "version": "1.0.0"
   },
-  "host": "web-services-w08-tyi3.onrender.com",
+  "host": "web-services-w06.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
