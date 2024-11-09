@@ -7,9 +7,9 @@ const config = {
   authRequired: false,
   auth0Logout: true,
   secret: process.env.SECRET,
-  baseURL: process.env.baseURL || 'http://localhost:8080',
-  clientID: 'k0kud3qphKmMhTCLuzbwpRiTui0iNT5N',
-  issuerBaseURL: 'https://dev-bmc1nyaxad430dir.us.auth0.com'
+  baseURL: process.env.baseURL || `http://localhost:${port}`,
+  clientID: process.env.CLIENT_ID,
+  issuerBaseURL: process.env.ISSUER_BASE_URL,
 };
 
 const port = process.env.PORT || 8080;
