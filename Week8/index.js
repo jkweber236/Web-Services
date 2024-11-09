@@ -21,10 +21,9 @@ app
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
   })
+  // auth router attaches /login, /logout, and /callback routes to the baseURL
+  .use(auth(config))
   .use('/', require('./routes'));
-
-// auth router attaches /login, /logout, and /callback routes to the baseURL
-app.use(auth(config));
 
 // req.isAuthenticated is provided from the auth router
 app.get('/', (req, res) => {
