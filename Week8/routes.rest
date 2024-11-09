@@ -97,7 +97,7 @@ DELETE http://localhost:8080/exercises/ HTTP/1.1
 
 // PRODUCTION Deploy
 ### Get all workouts
-GET https://web-services-w07.onrender.com/workouts 
+GET https://web-services-w08-tyi3.onrender.com/workouts 
 
 ### Get all exercises
 GET https://web-services-w07.onrender.com/exercises

@@ -10,6 +10,12 @@ const app = express();
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 const usersRoutes = require('./routes/users');
+app.use('/', usersRoutes); 
+const workoutsRoutes = require('./routes/workouts');
+app.use('/workouts', workoutsRoutes);
+const exerciseRoutes = require('./routes/exercises');
+app.use('/exercises', exerciseRoutes);
+
 
 const config = {
   authRequired: false,
@@ -33,8 +39,6 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   next();
 });
-
-app.use('/', usersRoutes); 
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
