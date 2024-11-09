@@ -3,11 +3,12 @@ const router = express.Router();
 
 const workoutsController = require('../controllers/workouts');
 const validation = require('../middleware/validate');
+const requiresAuth = require('../middleware/requiresAuth');
 
-router.get('/', workoutsController.getAllWorkouts);
-router.get('/:id', workoutsController.getWorkout);
-router.post('/', validation.saveWorkout, workoutsController.createWorkout);
-router.put('/:id', validation.saveWorkout, workoutsController.updateWorkout);
-router.delete('/:id', workoutsController.deleteWorkout);
+router.get('/', requiresAuth(), workoutsController.getAllWorkouts);
+router.get('/:id', requiresAuth(), workoutsController.getWorkout);
+router.post('/', requiresAuth(), validation.saveWorkout, workoutsController.createWorkout);
+router.put('/:id', requiresAuth(), validation.saveWorkout, workoutsController.updateWorkout);
+router.delete('/:id', requiresAuth(), workoutsController.deleteWorkout);
 
 module.exports = router;
